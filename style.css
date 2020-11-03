@@ -1,0 +1,660 @@
+    /* CSS */
+    /* reset ********************************************************************* */
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0
+    }
+    /*  osnovno uređivanje HTML elemenata **************************************** */
+    
+    body {
+        color: #898989;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    ol,
+    dl,
+    li,
+    dt,
+    dd {
+        margin-bottom: 1em;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:link,
+    a:visited {
+        color: #898989;
+    }
+    
+    a:hover {
+        color: #7b405c !important;
+    }
+    
+    a img:hover {
+        opacity: 0.5;
+    }
+    
+    img,
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+    /* helpers ********************************************************************* */
+    
+    .align-left {
+        text-align: left;
+    }
+    
+    .align-right {
+        text-align: right;
+    }
+    
+    .align-center {
+        text-align: center;
+    }
+    
+    .align-justify {
+        text-align: justify;
+    }
+    /* layout ********************************************************************** */
+    
+    #page-footer,
+    #banner,
+    #primary,
+    #portfolio,
+    #kontakt-section,
+    #proizvodi,
+    #sidebar,
+    #katalog,
+    #cjenik,
+    #kontakt,
+    #tim,
+    #kontakt-section {
+        padding: 3rem 0;
+    }
+    
+    #page-header,
+    #portfolio,
+    #menu,
+    #page-footer {
+        background-color: #232323;
+    }
+    
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .col {
+        float: left;
+        margin-right: 2%;
+    }
+    
+    .col:last-child {
+        margin-right: 0;
+    }
+    
+    .col-3 {
+        width: 23.5%;
+    }
+    
+    .col-4 {
+        width: 32%;
+    }
+    
+    .col-6 {
+        width: 49%
+    }
+    
+    .col-8 {
+        width: 66%;
+    }
+    
+    .clearfix:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    
+    .row {
+        margin-bottom: 1rem;
+    }
+
+    
+    .section-header {
+        padding-bottom: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+    /* .card ***************/
+    
+    .card {
+        padding-bottom: 3rem;
+    }
+    
+    .card img{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+    
+    .card p {
+        text-align: justify;
+        padding: 0 1rem 1rem;
+    }
+    
+    .card a {
+        float: right;
+        padding-right: 1rem;
+        color: #b23876;
+    }
+    
+    .card-title a {
+        float: none;
+        padding-right: 0;
+        color: #898989;
+    }
+    /* #menu ************************************************************ */
+    
+    #menu {
+        position: fixed; /* fiksira menu na vrh ekrana */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1; /* pozicija po z osi */
+        padding: 1.5rem;
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+    }
+    
+    #mobile-button {
+        display: none;
+    }
+
+
+    /* menu ****************** */
+    .menu-right {
+        float: right;
+    }
+    
+    #menu ul {
+        margin-bottom: 0;
+    }
+    
+    #menu li {
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+        display: inline;
+        margin-left: 2rem;
+    }
+    
+    #menu a {
+        color: #d6e0e8;
+        font-size: 1.5rem;
+    }
+    
+    #menu a.active {
+        color: #7b405c;
+        font-weight: bold;
+    }
+    
+    .logo {
+        vertical-align: middle;
+    }
+    /* #banner ************************************************************ */
+    
+    #banner {
+        background: url(slike/header.jpg) center bottom/cover no-repeat;
+        height: 80vh;
+        position: relative;
+    }
+    
+    #banner h1 {
+        font-size: 4.5rem;
+        margin-bottom: 0;
+    }
+    
+    .banner-text {
+        text-align: center;
+        position: absolute;
+        top: 45%;
+        left: 0%;
+        right: 0%;
+        color: #b23876;
+        font-size: 2.5rem;
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+    }
+    /* #primary ***************************************************** */
+    
+    #primary {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    
+    #primary .onama-text {
+        font-size: 1.5rem;
+        padding-bottom: 3rem;
+    }
+    /* #protfolio ***************************************************** */
+    
+    #portfolio .row {
+        padding: 5% 2%;
+        background: url(slike/white-printer-paper-1920.jpg) center center/cover no-repeat;
+    }
+    
+    #portfolio {
+        padding-bottom: 6rem;
+    }
+    /* #tim ***************************************************** */
+    
+    .tim-ime {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    /* #kontakt-section ***************************************************** */
+    
+    #kontakt-section {
+        background: url(slike/kontakt-pozadina1920.jpg) center center/cover no-repeat;
+        padding: 6rem 0;
+    }
+    
+    #kontakt-section h2 {
+        color: #b23876;
+        font-size: 4rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .kontakt-button {
+        background-color: #b23876;
+        border: none;
+        color: #fff;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        font-size: 2rem;
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+    }
+    
+    #kontakt-section a {
+        color: #fff;
+    }
+    /* #page-footer ***************************************************** */
+    
+    #page-footer {
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+    }
+    
+    #page-footer a {
+        margin: 0 1rem;
+    }
+    
+    #page-footer p {
+        padding-top: 0.5rem;
+    }
+    /* proizvodi.html ***************************************************** */
+    
+    #web,
+    #graficki,
+    #vizualni,
+    #reklamni {
+        scroll-margin-top: 12em;
+        /* ispravak sticky header scroll*/
+    }
+    /* katalog.html ***************************************************** */
+    
+    #katalog h3 {
+        text-align: center;
+        color: #b23876;
+        padding-bottom: 1rem;
+    }
+    
+    #katalog-web,
+    #katalog-graficki,
+    #katalog-vizualni,
+    #katalog-reklamni {
+        padding-bottom: 3rem;
+    }
+    
+    #katalog-web,
+    #katalog-graficki,
+    #katalog-vizualni,
+    #katalog-reklamni,
+    #sidebar {
+        scroll-margin-top: 8em;
+        /* ispravak sticky header scroll*/
+    }
+    
+    #katalog .row {
+        margin-bottom: 0;
+    }
+    
+    .back {
+        float: right;
+        display: block;
+    }
+
+
+    /* cjenik.html ***************************************************** */
+
+    #cjenik h3 {
+        text-align: center;
+        color: #b23876;
+    }
+    
+    #cjenik table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+    }
+    
+    #cjenik table td,
+    #cjenik table th {
+        border: 1px solid #232323;
+        padding: 12px;
+        scroll-margin-top: 10em;
+        /* ispravak sticky header scroll*/
+    }
+    
+    #cjenik table th {
+        background-color: #7b405c;
+        color: #d6e0e8;
+    }
+    
+    #cjenik tr:nth-child(even) {
+        background-color: #898989;
+        color: #d6e0e8;
+    }
+    
+    #cjenik td:last-child {
+        text-align: center;
+    }
+    
+    .price {
+        text-align: right;
+    }
+    
+    #cjenik-web,
+    #cjenik-graficki,
+    #cjenik-vizualni,
+    #cjenik-reklamni {
+        padding-bottom: 3rem;
+        scroll-margin-top: 8em;
+        /* ispravak sticky header scroll za anchors */
+    }
+    /* kontakt.html  *****************************************************/
+    
+    #karta iframe {
+        width: 100%;
+        border: none;
+        height: 40vh;
+    }
+    
+    #kontakt input {
+        padding: 10px;
+        margin-bottom: 1rem;
+    }
+    
+    #kontakt label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+    }
+    
+    #kontakt textarea {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+    }
+    
+    #kontakt-form {
+        scroll-margin-top: 8em;
+        /* ispravak sticky header scroll*/
+    }
+    
+    .btn {
+        font-weight: bold;
+        width: 49%;
+        background-color: #b23876;
+        color: #d6e0e8;
+        margin: 1rem 0;
+        border: none;
+        border-radius: 4px;
+        display: inline-block;
+    }
+    
+    .btn:hover {
+        background-color: #7b405c;
+    }
+    
+    .full-width {
+        width: 100%;
+    }
+    
+    #onama {
+        background-color: #232323;
+        color: #d6e0e8;
+        background-size: cover;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+    
+    #onama img {
+        width: 50%;
+        padding-bottom: 1rem;
+    }
+    
+    #onama h3 {
+        padding-top: 1rem;
+    }
+    
+    #onama p {
+        padding-bottom: 0.5rem;
+    }
+
+
+
+
+    /* Media Queries ******************************************************/
+    
+    @media (min-width:992px) {
+        /* ispravlja grešku prikaza u developers tools pri resize*/
+        #menu ul {
+            display: block !important;
+        }
+    }
+
+
+    /* uređaji >= 768px <1200px - mali desktop monitori, laptopi, tableti */
+    @media (max-width:1200px) {
+        .col-6 {
+            width: 48%;
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+
+        .col-8 {
+            width: 100%;
+        }
+
+        .col-3 {
+            width: 48%;
+        }
+
+        /* menu */
+        #logo {
+            display: none;
+        }
+
+        #menu a {
+            font-size: 1rem;
+        }
+
+        /* banner */
+        #banner{
+            height: 60vh;
+        }
+
+        #banner h1{
+            font-size: 3rem;
+        }
+
+        #banner .banner-text {
+            font-size: 1.5rem;
+        }
+        
+
+        #tim, #kontakt-section {
+            padding: 3rem 0;
+        }
+        .tim-card {
+            margin-bottom: 3rem;
+        }
+
+        /* #kontakt-section ******/
+        #kontakt-section h2 {
+            font-size: 3rem;
+        }
+
+        .kontakt-button {
+            font-size: 1.5rem;
+        }
+
+        /* footer *******/
+        #page-footer p{ padding:1rem 0;}
+
+        /* #sidebar menu*****/
+        #sidebar {
+            padding-left: 2rem;            
+        }
+
+        /* cjenik.html *******/        
+        #cjenik .row{
+            margin-right: 2rem;
+            margin-left: 2rem;
+        }
+    }
+
+
+    /* uređaji <767px - mobilni uređaji ****************************/
+    
+    @media (max-width:767px) {
+        /* riješavamo se stupaca */
+        .col {
+            float: none;
+            margin-right: 0;
+        }
+        .col-3,
+        .col-4,
+        .col-6,
+        .col-8 {
+            width: 100%;
+        }
+        #menu a,
+        #sidebar a,
+        #page-footer a {
+            display: block;
+            padding: 1rem 0;            
+        }
+        
+        #page-footer a {
+            display: inline-block;
+        }
+        #page-footer p {
+            padding: 1rem 0;
+        }
+        /* mobile navigation */
+        #mobile-button {
+            display: block;
+        }
+        #menu li {
+            display: block;
+            margin-left: 0;
+        }
+        #menu ul {
+            text-align: center;
+            display: none;
+        }
+        #logo {
+            display: none;
+        }
+        /* banner ***********/
+        #banner {
+            height: 60vh;
+        }
+
+        #banner h1 {
+            font-size: 2rem;
+        }
+        .banner-text {
+            font-size: 1rem;
+        }
+
+        /* primary *****/
+        #primary {
+           padding-left: 1rem; 
+           padding-right: 1rem;
+        }
+        
+        #primary .col-3 {
+            margin-bottom: 2rem;
+        }
+
+        /* #portfolio *****/
+        #portfolio img{
+            padding-bottom: 1rem;
+        }
+
+
+        /* #kontakt-section *****/
+        #kontakt-section {
+            height: 40vh;
+        }
+        
+        /* .card **/
+        .card a {
+            display: inline-block;
+            padding: 1rem;
+            margin-left: 1rem;
+        }
+
+        .back {
+            display: inline-block;
+            padding: 1rem;
+            margin-right: 1rem;
+        }
+    }
